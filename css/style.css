@@ -1,0 +1,174 @@
+/* ======== ESTILO GERAL ======== */
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
+
+header {
+    background: #0d6efd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header input {
+    margin-top: 15px;
+    padding: 12px;
+    width: 70%;
+    max-width: 420px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ======== MENU ======== */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    font-weight: 600;
+    color: #0d6efd;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    transform: translateY(-3px);
+    background: #e8f0ff;
+}
+
+/* ======== MÓDULOS ======== */
+
+.modulo {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Balão estilo nuvem */
+
+.resumo-nuvem {
+    background: #dff1ff;
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 40px;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.resumo-nuvem::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #dff1ff;
+    border-radius: 50%;
+    bottom: -7px;
+    left: 20px;
+}
+
+/* ======== BOTÕES ======== */
+
+.btn {
+    padding: 12px 16px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background: #0b5cd5;
+}
+
+.btn-refazer {
+    background: #6c757d;
+}
+
+.btn-refazer:hover {
+    background: #5c636a;
+}
+
+/* ======== LIVROS ======== */
+
+.lista-livros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.livro {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.livro a {
+    text-decoration: none;
+    background: #198754;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.livro a:hover {
+    background: #13653f;
+}
+
+/* ======== LEMBRETES ======== */
+
+.lembrete {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ======== QUIZ ======== */
+
+#quiz {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.pergunta {
+    margin-bottom: 20px;
+}
+
+#resultado {
+    margin-top: 20px;
+    background: #e8f0ff;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+}
